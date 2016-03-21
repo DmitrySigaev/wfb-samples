@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wfb", "wfb.vcxproj", "{F186964E-2382-4856-861B-0B7E0EAF282F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calc", "..\calc\calc.vcxproj", "{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Debug|x64.ActiveCfg = Debug|x64
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Debug|x64.Build.0 = Debug|x64
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Debug|x86.ActiveCfg = Debug|Win32
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Debug|x86.Build.0 = Debug|Win32
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Release|x64.ActiveCfg = Release|x64
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Release|x64.Build.0 = Release|x64
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Release|x86.ActiveCfg = Release|Win32
-		{F186964E-2382-4856-861B-0B7E0EAF282F}.Release|x86.Build.0 = Release|Win32
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Debug|x64.ActiveCfg = Debug|x64
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Debug|x64.Build.0 = Debug|x64
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Debug|x86.Build.0 = Debug|Win32
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x64.ActiveCfg = Release|x64
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x64.Build.0 = Release|x64
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x86.ActiveCfg = Release|Win32
+		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

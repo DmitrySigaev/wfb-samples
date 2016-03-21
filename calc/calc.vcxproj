@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F186964E-2382-4856-861B-0B7E0EAF282F}</ProjectGuid>
+    <ProjectGuid>{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>wfb</RootNamespace>
+    <RootNamespace>calc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\main.c" />
+    <None Include="lexer.l" />
+    <None Include="parser.y" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
