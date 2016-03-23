@@ -1,0 +1,6 @@
+/data/
+*.exe
+*.flex.c
+*.tab.c
+*.tab.h
+*.1.h

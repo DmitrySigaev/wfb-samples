@@ -97,6 +97,10 @@
     <Bison>
       <OutputFile>%(Filename).tab.c</OutputFile>
     </Bison>
+    <Flex>
+      <OutputFile>%(Filename).flex.c</OutputFile>
+      <HeaderFile>lexer.1.h</HeaderFile>
+    </Flex>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -110,6 +114,12 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bison>
+      <OutputFile>%(Filename).tab.c</OutputFile>
+    </Bison>
+    <Flex>
+      <OutputFile>%(Filename).flex.c</OutputFile>
+    </Flex>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -146,7 +156,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lexer.flex.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="parser.tab.c" />
   </ItemGroup>
   <ItemGroup>
     <Flex Include="lexer.l" />
