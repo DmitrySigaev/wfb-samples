@@ -1,4 +1,4 @@
-#include "lexer.1.h"
+#include "lexer.flex.h"
 #include "parser.tab.h"
 
 int main(int argc, char **argv) {

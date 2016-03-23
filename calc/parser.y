@@ -1,6 +1,6 @@
 %{
 #include <stdio.h>
-#include "lexer.1.h"
+#include "lexer.flex.h"
 %}
 
 %token NUMBER
