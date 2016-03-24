@@ -1,1 +1,3 @@
 *.VC.opendb
+/data/
+*.exe

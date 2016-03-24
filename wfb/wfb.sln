@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calc", "..\calc\calc.vcxproj", "{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpcalc", "..\rpcalc\rpcalc.vcxproj", "{E7C04853-7EC9-4987-A659-3527B57F6607}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x64.Build.0 = Release|x64
 		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x86.ActiveCfg = Release|Win32
 		{0C71127D-ED9F-4591-9B9B-5630DBEF8BEE}.Release|x86.Build.0 = Release|Win32
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Debug|x64.ActiveCfg = Debug|x64
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Debug|x64.Build.0 = Debug|x64
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Debug|x86.ActiveCfg = Debug|Win32
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Debug|x86.Build.0 = Debug|Win32
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Release|x64.ActiveCfg = Release|x64
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Release|x64.Build.0 = Release|x64
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Release|x86.ActiveCfg = Release|Win32
+		{E7C04853-7EC9-4987-A659-3527B57F6607}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
