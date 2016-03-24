@@ -94,6 +94,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bison>
+      <OutputFile>%(Filename).tab.c</OutputFile>
+    </Bison>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -144,6 +147,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Bison Include="rpcalc.y" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="rpcalc.tab.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rpcalc.tab.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

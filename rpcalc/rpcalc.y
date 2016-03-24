@@ -1,16 +1,19 @@
 /* Калькулятор обратной польской нотации. */
+/* Reverse polish notation calculator */
 
 %{
 #define YYSTYPE double
 #include <math.h>
+#include <stdio.h>
 %}
 
 %token NUM
 
 %% /* Далее следуют правила грамматики и действия */
+/* Grammar rules and actions follow */
 
-input:    /* пусто */
-        | input line
+input:    /* пусто */    /* empty */
+        | input line     /* A complete input is either an empty string, or a complete input followed by an input line. */
 ;
 
 line:     '\n'
@@ -22,9 +25,9 @@ exp:      NUM             { $$ = $1;         }
         | exp exp '-'     { $$ = $1 - $2;    }
         | exp exp '*'     { $$ = $1 * $2;    }
         | exp exp '/'     { $$ = $1 / $2;    }
-      /* возведение в степень */
+      /* возведение в степень */ /* Exponentiation */
         | exp exp '^'     { $$ = pow ($1, $2); }
-      /* унарный минус        */
+      /* унарный минус        */ /* Unary minus    */
         | exp 'n'         { $$ = -$1;        }
 ;
 %%
