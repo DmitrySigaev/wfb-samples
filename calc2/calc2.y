@@ -27,6 +27,7 @@ input:    /* empty string */ /* пустая строка */
 
 line:     '\n'
         | exp '\n'  { printf ("\t%.10g\n", $1); }
+        | error '\n' { yyerrok;                 } /* This addition to the grammar allows for simple error recovery in the event of a parse error. */
 ;
 
 exp:      NUM                { $$ = $1;         }
