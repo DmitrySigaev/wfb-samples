@@ -5,6 +5,8 @@
 #define YYSTYPE double
 #include <math.h>
 #include <stdio.h>
+  int yylex (void); /* fix warning */
+  void yyerror (char const *);
 %}
 
 %token NUM

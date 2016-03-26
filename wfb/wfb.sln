@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpcalc", "..\rpcalc\rpcalc.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calc2", "..\calc2\calc2.vcxproj", "{C6B58681-F41A-4EFB-A9C8-2775E09D2058}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ltcalc", "..\ltcalc\ltcalc.vcxproj", "{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{C6B58681-F41A-4EFB-A9C8-2775E09D2058}.Release|x64.Build.0 = Release|x64
 		{C6B58681-F41A-4EFB-A9C8-2775E09D2058}.Release|x86.ActiveCfg = Release|Win32
 		{C6B58681-F41A-4EFB-A9C8-2775E09D2058}.Release|x86.Build.0 = Release|Win32
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Debug|x64.ActiveCfg = Debug|x64
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Debug|x64.Build.0 = Debug|x64
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Debug|x86.Build.0 = Debug|Win32
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Release|x64.ActiveCfg = Release|x64
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Release|x64.Build.0 = Release|x64
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Release|x86.ActiveCfg = Release|Win32
+		{CA47762D-4DB8-4B4C-9D2C-80749EC53A06}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
