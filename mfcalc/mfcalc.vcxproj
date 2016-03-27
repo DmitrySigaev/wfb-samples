@@ -26,9 +26,6 @@
     <ClInclude Include="calc.h" />
     <ClInclude Include="mfcalc.tab.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Bison Include="mfcalc.y" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{030BAFBF-E807-4873-B50D-AAE4164FA5B9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

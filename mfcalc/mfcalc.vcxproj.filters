@@ -30,7 +30,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Bison Include="mfcalc.y" />
-  </ItemGroup>
 </Project>
