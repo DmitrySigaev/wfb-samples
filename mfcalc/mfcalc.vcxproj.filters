@@ -18,25 +18,19 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lexer.flex.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="parser.tab.c">
+    <ClCompile Include="mfcalc.tab.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Flex Include="lexer.l" />
-  </ItemGroup>
-  <ItemGroup>
-    <Bison Include="parser.y" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lexer.flex.h">
+    <ClInclude Include="calc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="parser.tab.h">
+    <ClInclude Include="mfcalc.tab.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Bison Include="mfcalc.y" />
   </ItemGroup>
 </Project>
