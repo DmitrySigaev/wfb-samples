@@ -52,11 +52,11 @@ statement:					listofdeclaration
 						| the_expression semicolon
 						;
 readstatement:   READ id semicolon
-				| error {printf(" Wrong read syntax at line  %d\n",lnumber);}
-				;
+						| error {printf(" Wrong read syntax at line  %d\n",lnumber);}
+						;
 writestatement: WRITE id semicolon
-				| error {printf(" Wrong write syntax at line  %d\n",lnumber);}
-				;				
+						| error {printf(" Wrong write syntax at line  %d\n",lnumber);}
+						;
 iterationstatement:			WHILE leftparenthesis the_expression rightparenthesis statement
 						| DO statement WHILE leftparenthesis the_expression rightparenthesis semicolon
 						| FOR leftparenthesis the_expression semicolon the_expression semicolon the_expression rightparenthesis statement
