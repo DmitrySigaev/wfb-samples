@@ -29,7 +29,9 @@
 
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
+
 #include "calc.h"
+
 #ifndef YY_YY_MFCALC_TAB_H_INCLUDED
 # define YY_YY_MFCALC_TAB_H_INCLUDED
 /* Debug traces.  */
