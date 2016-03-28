@@ -15,22 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Flex Include="lexer.l" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mfcalc.tab.c">
+    <ClCompile Include="lexer.flex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.tab.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="calc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mfcalc.tab.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Bison Include="parser.y" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mfcalc.pry" />
+    <ClInclude Include="parser.tab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lexer.flex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

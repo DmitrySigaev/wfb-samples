@@ -1,0 +1,49 @@
+%{
+#include <math.h>  /* Математические функции: cos(), sin() и т.д. */
+#include "calc.h"  /* Содержит определение `symrec'               */
+%}
+
+
+%token <val>  NUM        /* Простое число двойной точности   */
+%token <tptr> VAR FNCT   /* Переменная и функция             */
+%type  <val>  exp
+
+%union {
+    double     val;  /* Чтобы возвращать числа.                     */
+    symrec_t  *tptr;   /* Чтобы возвращать указатели таблицы символов */
+}
+
+%right '='
+%left '-' '+'
+%left '*' '/'
+%left NEG     /* Обращение -- унарный минус */
+%right '^'    /* Возведение в степень       */
+
+/* Далее следует грамматика */
+
+%%
+
+input:   /* пусто */
+        | input line
+;
+
+line:
+          '\n'
+        | exp '\n'   { printf ("\t%.10g\n", $1); }
+        | error '\n' { yyerrok;                  }
+;
+
+exp:      NUM                { $$ = $1;                         }
+        | VAR                { $$ = $1->value.var;              }
+        | VAR '=' exp        { $$ = $3; $1->value.var = $3;     }
+        | FNCT '(' exp ')'   { $$ = (*($1->value.fnctptr))($3); }
+        | exp '+' exp        { $$ = $1 + $3;                    }
+        | exp '-' exp        { $$ = $1 - $3;                    }
+        | exp '*' exp        { $$ = $1 * $3;                    }
+        | exp '/' exp        { $$ = $1 / $3;                    }
+        | '-' exp  %prec NEG { $$ = -$2;                        }
+        | exp '^' exp        { $$ = pow ($1, $3);               }
+        | '(' exp ')'        { $$ = $2;                         }
+;
+/* End of grammar */
+%%
