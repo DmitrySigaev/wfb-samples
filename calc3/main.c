@@ -33,6 +33,7 @@ int yylex(void)
 }
 
 int main(int argc, char **argv) {
+	yylval.line = 0;
 	yyparse();
 }
 
