@@ -55,10 +55,10 @@ extern int yydebug;
 typedef union YYSTYPE YYSTYPE;
 union YYSTYPE
 {
-#line 20 "calc2.y" /* yacc.c:1909  */
+#line 10 "calc2.y" /* yacc.c:1909  */
 
-  int db;
-  char ch;
+double db;
+char err;
 
 
 #line 65 "calc2.tab.h" /* yacc.c:1909  */

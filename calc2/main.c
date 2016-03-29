@@ -20,7 +20,7 @@ int yylex(void)
 	if (c == '.' || isdigit(c))
 	{
 		ungetc(c, stdin);
-		scanf("%d", &yylval);
+		scanf("%lf", &yylval);
 		return NUM;
 	}
 	/* return end-of-file  */
