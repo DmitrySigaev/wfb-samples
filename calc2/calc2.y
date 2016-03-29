@@ -2,7 +2,6 @@
 /*  алькул€тор дл€ выражени в инфиксной нотации -- calc */
 
 %{
-#define YYSTYPE double
 #include <math.h>
 #include <stdio.h>
 %}
@@ -18,6 +17,15 @@
 %left NEG     /* negation--unary minus */ /* обращение -- унарный минус */
 %right '^'    /* exponentiation        */ /* возведение в степень       */
 
+%union {
+  int db;
+  char ch;
+
+}
+
+%token <db>  NUM
+%type <db>  exp
+%token <ch>  '\n'
 /* Grammar follows */
 /* ƒалее следует грамматика */
 %%
@@ -26,7 +34,7 @@ input:    /* empty string */ /* пуста€ строка */
 ;
 
 line:     '\n'
-        | exp '\n'  { printf ("\t%.10g\n", $1); }
+        | exp '\n'  { printf ("\t%d, %c\n", $1, $2); } /* $2 смысла не имеет, как мы видим это только union(либо то либо другое. '\n' не выдает)
         | error '\n' { yyerrok;                 } /* This addition to the grammar allows for simple error recovery in the event of a parse error. */
 ;
 
