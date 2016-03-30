@@ -407,7 +407,7 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    21,    21,    22,    25,    26,    29,    30,    33,    34
+       0,    27,    27,    28,    31,    32,    35,    36,    39,    40
 };
 #endif
 
@@ -1178,55 +1178,49 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 21 "calc3.y" /* yacc.c:1646  */
+#line 27 "calc3.y" /* yacc.c:1646  */
     { printf("The result is %d\n", (yyvsp[-1].val)); }
 #line 1184 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 3:
-#line 22 "calc3.y" /* yacc.c:1646  */
-    { (yyval.line) = (yyvsp[0].line)+1; }
+  case 4:
+#line 31 "calc3.y" /* yacc.c:1646  */
+    { (yyval.val) = (yyvsp[-2].val) + (yyvsp[0].val); /* %type  <val> exp factor */ /*yyac notation $$.val = $1.val + $3.val .val means type int*/}
 #line 1190 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 4:
-#line 25 "calc3.y" /* yacc.c:1646  */
-    { (yyval.val) = (yyvsp[-2].val) + (yyvsp[0].val); /* %type  <val> exp factor */ /*yyac notation $$.val = $1.val + $3.val .val means type int*/}
+  case 5:
+#line 32 "calc3.y" /* yacc.c:1646  */
+    { (yyval.val) = (yyvsp[0].val); }
 #line 1196 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 5:
-#line 26 "calc3.y" /* yacc.c:1646  */
-    { (yyval.val) = (yyvsp[0].val); }
+  case 6:
+#line 35 "calc3.y" /* yacc.c:1646  */
+    { (yyval.val) = (yyvsp[-2].val) * (yyvsp[0].val); }
 #line 1202 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 6:
-#line 29 "calc3.y" /* yacc.c:1646  */
-    { (yyval.val) = (yyvsp[-2].val) * (yyvsp[0].val); }
+  case 7:
+#line 36 "calc3.y" /* yacc.c:1646  */
+    { (yyval.val) = (yyvsp[0].val); }
 #line 1208 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 7:
-#line 30 "calc3.y" /* yacc.c:1646  */
+  case 8:
+#line 39 "calc3.y" /* yacc.c:1646  */
     { (yyval.val) = (yyvsp[0].val); }
 #line 1214 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 8:
-#line 33 "calc3.y" /* yacc.c:1646  */
-    { (yyval.val) = (yyvsp[0].val); }
+  case 9:
+#line 40 "calc3.y" /* yacc.c:1646  */
+    { (yyval.val) = (yyvsp[-1].val); }
 #line 1220 "y.tab.c" /* yacc.c:1646  */
     break;
 
-  case 9:
-#line 34 "calc3.y" /* yacc.c:1646  */
-    { (yyval.val) = (yyvsp[-1].val); }
-#line 1226 "y.tab.c" /* yacc.c:1646  */
-    break;
 
-
-#line 1230 "y.tab.c" /* yacc.c:1646  */
+#line 1224 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1454,4 +1448,4 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 36 "calc3.y" /* yacc.c:1906  */
+#line 42 "calc3.y" /* yacc.c:1906  */
